@@ -1,0 +1,14 @@
+# folder
+input/
+
+# data
+*.csv
+*.jpg
+
+# hidden file
+.cache/
+.jupyter/
+.local/
+.gitconfig
+.profile
+.viminfo
