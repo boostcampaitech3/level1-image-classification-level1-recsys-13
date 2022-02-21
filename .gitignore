@@ -12,3 +12,4 @@ input/
 .gitconfig
 .profile
 .viminfo
+.ipynb_checkpoints/
