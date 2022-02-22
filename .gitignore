@@ -9,6 +9,15 @@ input/
 .cache/
 .jupyter/
 .local/
+.conda/
+.ipython/
+.vscode-server/
+.empty/
+.nv/
+*/.vscode/
+*/.ipynb_checkpoints/
 .gitconfig
 .profile
 .viminfo
+.bash_history
+.wget-hsts
