@@ -1,11 +1,6 @@
 # folder
 input/
-
-# data
-*.csv
-*.jpg
-
-# hidden file
+anaconda3/
 .cache/
 .jupyter/
 .local/
@@ -16,8 +11,17 @@ input/
 .nv/
 */.vscode/
 */.ipynb_checkpoints/
+
+# data
+*.csv
+*.jpg
+
+# file
 .gitconfig
 .profile
 .viminfo
 .bash_history
+.bash_profile
+.bashrc
+.condarc
 .wget-hsts
