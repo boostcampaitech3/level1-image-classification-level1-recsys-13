@@ -11,6 +11,7 @@ anaconda3/
 .nv/
 */.vscode/
 */.ipynb_checkpoints/
+Mincheol/my/
 
 # data
 *.csv
