@@ -16,6 +16,9 @@ anaconda3/
 *.csv
 *.jpg
 
+# model
+*.pt
+
 # file
 .gitconfig
 .profile
