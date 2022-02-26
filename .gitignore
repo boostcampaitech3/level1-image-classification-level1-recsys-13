@@ -9,13 +9,21 @@ anaconda3/
 .vscode-server/
 .empty/
 .nv/
+.vscode/
 */.vscode/
 */.ipynb_checkpoints/
+<<<<<<< HEAD
 .ipynb_checkpoints/
+=======
+Mincheol/my/
+>>>>>>> main
 
 # data
 *.csv
 *.jpg
+
+# model
+*.pt
 
 # file
 .gitconfig
