@@ -12,7 +12,11 @@ anaconda3/
 .vscode/
 */.vscode/
 */.ipynb_checkpoints/
+<<<<<<< HEAD
+.ipynb_checkpoints/
+=======
 Mincheol/my/
+>>>>>>> main
 
 # data
 *.csv
