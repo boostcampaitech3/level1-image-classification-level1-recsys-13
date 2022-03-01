@@ -14,3 +14,9 @@
     - oversampling 노트북 생성 F1 0.7175, acc : 77.7778
 - 20220226
     - 성범님 노트북에 oversampling 적용
+- 20220227
+    - 오버샘플링 성능 비교
+    - pseudo labeling 성능 비교
+- 20220228
+    - 오버샘플링 적용 노트북 - v28
+    - age0 model 학습 -v34
