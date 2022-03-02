@@ -1,5 +1,4 @@
 import warnings
-warnings.filterwarnings('ignore')
 
 from loss import LabelSmoothingLoss, FocalLoss, F1Loss
 from model import CreateModel
@@ -7,7 +6,7 @@ from dataAugmentation import dataAugmentation
 from dataPreprocessing import dataPreProcessing
 from dataset import CustomDataset, StratifiedSampler
 from metric import get_acc_score, get_f1_score
-from transfrom import get_transform
+from transform import get_transform
 
 import torch
 import torch.nn as nn
@@ -303,7 +302,7 @@ def main(config):
 
         # 모델 정의
         train_loader, val_loader = get_dataloader(trn_df=trn_df, val_df=val_df, config = config, transform = transform, model_name=config.model_name, mode=True, stratify=False)
-        model = CreateModel(config=config, pretrained=True, Multi_Sample_Dropout=True).to(device)
+        model = CreateModel(config=config, pretrained=False, Multi_Sample_Dropout=True).to(device)
         criterion = get_criterion(config=config)
         optimizer = torch.optim.Adam(model.parameters(), lr=config.lr, amsgrad=True)
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', factor=0.1, eps=1e-09, patience=3)
@@ -400,7 +399,7 @@ def pred(config):
         submission_loader = get_dataloader(trn_df=submission, val_df=None, config=config, transform=transform,
                                            model_name=config.model_name, mode=False, stratify=False)
 
-        model = CreateModel(config=config, pretrained=True, Multi_Sample_Dropout=True).to(device)
+        model = CreateModel(config=config, pretrained=False, Multi_Sample_Dropout=True).to(device)
         model.load_state_dict(torch.load(os.path.join(config.model_dir, f'{fold_num}fold_{config.model_name}.pt')))
         val_label_pred_li, val_ensemble_pred_li, real_pred_li = get_pred_li(model=model, data_loader=val_loader,
                                                                             device=device)
@@ -430,9 +429,9 @@ def pred(config):
     submission.to_csv(config.file_name, index=False)
     print('Done!')
 
-
 if __name__ == '__main__':
 
+    warnings.filterwarnings('ignore')
     config = {
         'train_data_name': 'train.csv',
         'train_data_dir': '/opt/ml/input/data/train',
@@ -456,12 +455,12 @@ if __name__ == '__main__':
         'epochs': 20,
         'batch_size': 64,
         'lr': 9e-05,
-        'image_size': [384, 384],
+        'image_size': [380, 380],
         'image_normal_mean': [0.5, 0.5, 0.5],
         'image_normal_std': [0.2, 0.2, 0.2],
         'target_col' : 'labels',
         'split_target_col' : 'labels',
-        'timm_model_name': 'regnetx_004',
+        'timm_model_name': 'regnetx_002',
         'loss': 'cel',
 
         'seed': 22,
