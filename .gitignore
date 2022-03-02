@@ -12,6 +12,7 @@ anaconda3/
 .vscode/
 */.vscode/
 */.ipynb_checkpoints/
+.ipynb_checkpoints
 Mincheol/my/
 .keras
 
