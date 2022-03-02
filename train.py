@@ -452,9 +452,9 @@ if __name__ == '__main__':
         'num_classes': 18,
 
         'num_workers': 4,
-        'epochs': 20,
+        'epochs': 35,
         'batch_size': 64,
-        'lr': 9e-05,
+        'lr': 9e-04,
         'image_size': [380, 380],
         'image_normal_mean': [0.5, 0.5, 0.5],
         'image_normal_std': [0.2, 0.2, 0.2],
