@@ -23,3 +23,7 @@
 - 20220301
     - main model 테스트 - v34_main
     - fold 기준 age로 수정 - v35_main
+- 20220302
+    - 오버샘플링 + pseudo labeling 적용 age_Cats, gender, mask 모델 앙상블 - v36
+    - 오버샘플링 + pseudo labeling 적용 main 모델 - v37
+    
