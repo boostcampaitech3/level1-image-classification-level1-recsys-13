@@ -15,8 +15,11 @@
 - 20220226
     - 성범님 노트북에 oversampling 적용
 - 20220227
-    - 오버샘플링 성능 비교
-    - pseudo labeling 성능 비교
+    - 오버샘플링 성능 비교 - v18, v19
+    - pseudo labeling 성능 비교 - v23
 - 20220228
     - 오버샘플링 적용 노트북 - v28
     - age0 model 학습 -v34
+- 20220301
+    - main model 테스트 - v34_main
+    - fold 기준 age로 수정 - v35_main
