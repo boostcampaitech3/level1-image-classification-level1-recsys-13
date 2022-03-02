@@ -249,6 +249,7 @@ def get_val_idx(df : pd.DataFrame, target_col : str):
         yield val_idx
 
 def main(config):
+    seed_everything(config.seed)
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     transform = get_transform(config = config)
 
