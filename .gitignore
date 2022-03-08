@@ -1,0 +1,35 @@
+# folder
+input/
+anaconda3/
+.cache/
+.jupyter/
+.local/
+.conda/
+.ipython/
+.vscode-server/
+.empty/
+.nv/
+.vscode/
+*/.vscode/
+*/.ipynb_checkpoints/
+.ipynb_checkpoints
+Mincheol/my/
+.keras
+.idea
+
+# data
+*.csv
+*.jpg
+
+# model
+*.pt
+
+# file
+.gitconfig
+.profile
+.viminfo
+.bash_history
+.bash_profile
+.bashrc
+.condarc
+.wget-hsts

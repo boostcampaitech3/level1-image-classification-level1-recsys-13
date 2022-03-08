@@ -1,0 +1,31 @@
+# SeungTai
+
+## 진행 사항 기록
+- 20220222
+    - Resnet18 Pretrained(fine-tuning) model 노트북 생성 
+    - efficientnetb0 Pretrained(fine-tuning) model 노트북 생성
+    - efficientnetb5 Pretrained(fine-tuning) model 노트북 생성
+- 20220223 
+    - incorrect 이미지 및 폴더명 전처리 노트북 생성(incorrect_preprocess) -> 사용 X 
+- 20220224
+    - efficientnetb4 Pretrained(fine_tuning) model 노트북 생성
+    - regnet_y_400mf Pretrained(fine_tuning) model 노트북 생성(파일 전처리 반영) 
+- 20220225
+    - oversampling 노트북 생성 
+- 20220226
+    - 성범님 노트북에 oversampling 적용
+- 20220227
+    - 오버샘플링 성능 비교 - v18, v19
+    - pseudo labeling 성능 비교 - v23
+- 20220228
+    - 오버샘플링 적용 노트북 - v28
+    - age0 model 학습 -v34
+- 20220301
+    - main model 테스트 - v34_main
+    - fold 기준 age로 수정 - v35_main
+- 20220302
+    - 오버샘플링 + pseudo labeling 적용 age_Cats, gender, mask 모델 앙상블 - v36
+    - 오버샘플링 + pseudo labeling 적용 main 모델 - v37
+- 20220303
+    - v37 notebook에 adamW optimizer 적용
+    - regression 모델 성능 실험 - v38
